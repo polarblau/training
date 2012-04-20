@@ -9,7 +9,7 @@ For some of the steps you will need to "execute code in the Terminal". And by ex
 
 **ATTENTION! Sometimes you will need to modify a line of code before you execute it, to match your personal environment. Read the instructions carefully before running anything.**
 
-1. **Ruby** — Ruby comes pre installed with OS X since Leopard, so unless you're running a fairly outdated version of OS X, you should have it already and _don't have to do anything_ for now. — We'll update Ruby further below, though.
+## **Ruby** — Ruby comes pre installed with OS X since Leopard, so unless you're running a fairly outdated version of OS X, you should have it already and _don't have to do anything_ for now. — We'll update Ruby further below, though.
 
 To check, open your Terminal application, type `ruby -v` and you should see something like this:
 
@@ -17,7 +17,7 @@ To check, open your Terminal application, type `ruby -v` and you should see some
 ruby 1.8.7 (2010-01-10 patchlevel 249) [universal-darwin11.0]
 ```
 
-2. **Editor** — We will need a text editor to work on our prototype and pretty much any editor with some syntax highlighting will do. However, if you don't have anything installed yet, I recommend [Textmate](Download a free trial ar http://macromates.com/) or [Sublime Text 2](http://www.sublimetext.com/2).
+## **Editor** — We will need a text editor to work on our prototype and pretty much any editor with some syntax highlighting will do. However, if you don't have anything installed yet, I recommend [Textmate](Download a free trial ar http://macromates.com/) or [Sublime Text 2](http://www.sublimetext.com/2).
 
 Textmate will provide you with a `mate` command which let's you open files and folders easily (of course you can use the file menues as usual).
 
@@ -27,7 +27,7 @@ If, for whatever reasons, the `mate` command is not available in your Terminal, 
 ln -s /Applications/TextMate.app/Contents/Resources/mate ~/bin/mate
 ```
 
-3. **Xcode** — In order to be able to proceed any further, we will need to download and install Apple’s Developer Tools. You can get them through the App Store by simply searching for "Xcode". More information can be found at [Apple's developer pages](https://developer.apple.com/xcode/).
+## **Xcode** — In order to be able to proceed any further, we will need to download and install Apple’s Developer Tools. You can get them through the App Store by simply searching for "Xcode". More information can be found at [Apple's developer pages](https://developer.apple.com/xcode/).
 
 If you don't have the App Store available, you can download it directly by signing in to [Apple's developer section](http://developer.apple.com/downloads) with your Apple ID. Note, that you have to be [registered](https://developer.apple.com/programs/register/) as an Apple developer in this case.
 
@@ -37,7 +37,7 @@ Go, have a cup of tea. This will take a while.
 
 ***
 
-4. **Homebrew** — Homebrew is a package manager for OS X. Simplified put, it helps you install bits of software more easily from the command line. Very helpful in many cases!
+## **Homebrew** — Homebrew is a package manager for OS X. Simplified put, it helps you install bits of software more easily from the command line. Very helpful in many cases!
 
 You can install Homebrew by running the following in your Terminal:
 
@@ -45,13 +45,13 @@ You can install Homebrew by running the following in your Terminal:
 /usr/bin/ruby -e "$(/usr/bin/curl -fksSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
 ```
 
-5. **Git** — Git is a version control system and while not 100% necessary for now, we'll be needing it sooner or later. Thanks to Homebrew, we can now just run the following line in the Terminal to install it:
+## **Git** — Git is a version control system and while not 100% necessary for now, we'll be needing it sooner or later. Thanks to Homebrew, we can now just run the following line in the Terminal to install it:
 
 ```bash
 brew install git
 ```
 
-6. **RVM** — RVM is the Ruby Version Manager, which will help us to update Ruby, to install multiple versions and overall to keep things tidy. To install RVM, execute the following line in your Terminal:
+## **RVM** — RVM is the Ruby Version Manager, which will help us to update Ruby, to install multiple versions and overall to keep things tidy. To install RVM, execute the following line in your Terminal:
 
 ```bash
 bash < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
@@ -59,7 +59,7 @@ bash < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-i
 
 Before you proceed, close your terminal and open it again. Otherwise `rvm` won't be available.
 
-7. **Updating Ruby** — Ruby 1.8.7 is fairly old by now and we should install a newer version, the latest at time of writing is 1.9.3.
+## **Updating Ruby** — Ruby 1.8.7 is fairly old by now and we should install a newer version, the latest at time of writing is 1.9.3.
 
 We can use RVM, which we just installed to do that:
 
@@ -97,19 +97,19 @@ Good time for a break. The worst part is over.
 
 ***
 
-8. **Install Bundler** — [Bundler](http://gembundler.com/) will help you manage the (few) dependencies for your prototype.
+## **Install Bundler** — [Bundler](http://gembundler.com/) will help you manage the (few) dependencies for your prototype.
 
 ```bash
 gem install bundler
 ```
 
-9. **Create a project folder** — Let's say you keep your projects under a folder called `/projects` and want to create a new project called `my-app` use `mkdir` (**m**ake **dir**ectory). I will use this fictional application also in further steps.
+## **Create a project folder** — Let's say you keep your projects under a folder called `/projects` and want to create a new project called `my-app` use `mkdir` (**m**ake **dir**ectory). I will use this fictional application also in further steps.
 
 ```bash
 mkdir projects/my-app
 ```
 
-10. **Create a .rvmrc file** — Since we have installed RVM, let's make use of it's capabilities to keep things tidy. RVM allows us to keep sets of gems (Ruby programs, usually dependencies of your app) in groups together. A `.rvmrc` file at the root of the project will tell RVM to use a certain version of Ruby and a certain set of gems when navigating to this folder (replace `projects/my-app` and `my-app` according to your needs):
+## **Create a .rvmrc file** — Since we have installed RVM, let's make use of it's capabilities to keep things tidy. RVM allows us to keep sets of gems (Ruby programs, usually dependencies of your app) in groups together. A `.rvmrc` file at the root of the project will tell RVM to use a certain version of Ruby and a certain set of gems when navigating to this folder (replace `projects/my-app` and `my-app` according to your needs):
 
 ```bash
 touch projects/my-app/.rvmrc
@@ -137,13 +137,13 @@ and you should see something like this:
 = Examine the contents of this file carefully to be sure the contents are    =
 = safe before trusting it! ( Choose v[iew] below to view the contents )      =
 ==============================================================================
-Do you wish to trust this .rvmrc file? (/Users/me/projects/my-app/.rvmrc)
+Do you wish to trust this .rvmrc file? (/Users/polarblau/Projects/foo/.rvmrc)
 y[es], n[o], v[iew], c[ancel]>
 ```
 
 Press `y` to accept the file you have just created as trusted.
 
-11. **Serve**
+## **Serve**
 Open your project in your editor — in case of textmate you can e.g. use:
 
 ```bash
@@ -187,7 +187,7 @@ serve create .
 
 to place the files in the current directory.
 
-12. **Configure serve** — (Last step with "configure" in the title for now).
+## **Configure serve** — (Last step with "configure" in the title for now).
 
 Return to your editor and open `config.ru`
 Then *replace* the entire content with this:
@@ -231,7 +231,7 @@ run Rack::Cascade.new([
 ])
 ```
 
-13. **Done!** — Start your server from the Terminal with
+## **Done!** — Start your server from the Terminal with
 
 ```bash
 serve
