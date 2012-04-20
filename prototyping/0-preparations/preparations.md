@@ -1,6 +1,6 @@
 # Preparations
 
-In order to get your Mac* setup for prototyping with HAML/SASS/Ruby etc. (— if some of the acronyms are unknown, don't worry) we will need to install and configure a few things. 
+In order to get your Mac* setup for prototyping with HAML/SASS/Ruby etc. (— if some of the acronyms are unknown, don't worry) we will need to install and configure a few things.
 Some of the steps might take a while to complete, so it's a good idea to get this started beforehand.
 
 [DISCLAIMER: Some of the following items are based on my personal pereference and might have valid alternatives.]
@@ -71,7 +71,7 @@ Due to changes that came with Xcode for Lion, this will fail for some people. In
 
 ```bash
 rvm install 1.9.3 --with-gcc=clang
-``` 
+```
 
 In order to make version 1.9.3 the new default on your system, once the installation has completed run:
 
@@ -115,7 +115,7 @@ mkdir projects/my-app
 touch projects/my-app/.rvmrc
 echo rvm_gemset_create_on_use_flag=1 >> projects/my-app/.rvmrc
 echo rvm use ruby-1.9.3@my-app >> projects/my-app/.rvmrc
-``` 
+```
 
 This will create the `.rvmrc` file and write two lines to it. **Make sure that the paths in these lines match your project's location!**
 
@@ -137,14 +137,14 @@ and you should see something like this:
 = Examine the contents of this file carefully to be sure the contents are    =
 = safe before trusting it! ( Choose v[iew] below to view the contents )      =
 ==============================================================================
-Do you wish to trust this .rvmrc file? (/Users/polarblau/Projects/foo/.rvmrc)
-y[es], n[o], v[iew], c[ancel]> 
+Do you wish to trust this .rvmrc file? (/Users/me/projects/my-app/.rvmrc)
+y[es], n[o], v[iew], c[ancel]>
 ```
 
 Press `y` to accept the file you have just created as trusted.
 
-11. **Serve** 
-Open your project in your editor — in case of textmate you can e.g. use: 
+11. **Serve**
+Open your project in your editor — in case of textmate you can e.g. use:
 
 ```bash
 mate .
@@ -168,7 +168,7 @@ bundle install
 
 This will load the three gems we have just specified from the source (rubygems.org) and install them for the current project.
 
-Almost there … 
+Almost there …
 `serve` provides a generator which will get us started with a basic file structure.
 
 Usually you'd use the generator like this (from your Terminal).
@@ -189,7 +189,7 @@ to place the files in the current directory.
 
 12. **Configure serve** — (Last step with "configure" in the title for now).
 
-Return to your editor and open `config.ru` 
+Return to your editor and open `config.ru`
 Then *replace* the entire content with this:
 
 ```ruby
@@ -237,7 +237,7 @@ run Rack::Cascade.new([
 serve
 ```
 
-and open a browser window at 
+and open a browser window at
 
 ```bash
 http://localhost:4000
