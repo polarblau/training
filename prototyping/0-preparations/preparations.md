@@ -133,8 +133,8 @@ Since we have installed RVM, let's make use of it's capabilities to keep things 
 
 ```bash
 touch projects/my-app/.rvmrc
-echo rvm_gemset_create_on_use_flag=1 >> projects/my-app/.rvmrc
-echo rvm use ruby-1.9.3@my-app >> projects/my-app/.rvmrc
+echo 'rvm_gemset_create_on_use_flag=1' >> projects/my-app/.rvmrc
+echo 'rvm use ruby-1.9.3-p125@my-app' >> projects/my-app/.rvmrc
 ```
 
 This will create the `.rvmrc` file and write two lines to it. **Make sure that the paths in these lines match your project's location!**
