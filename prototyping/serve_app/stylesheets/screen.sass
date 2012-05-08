@@ -1,8 +1,18 @@
-body 
-  font-family: Helvetica, Arial, sans-serif
-  color: #222
-  background: #fcfcfc
-  padding: 2em
+@import "shared/colors"
+@import "shared/normalize"
+@import "shared/mixins"
+
+@import "shared/header"
+
+a, a:visited
+  color: $red
+  text-decoration: none
+  border-bottom: 1px dotted $red
   
-  h1
-    color: #ffcc00
+  &:hover,
+  &:active
+    border: none
+  
+body
+  background: white url(/images/shared/bg.png)
+  

@@ -1,11 +1,559 @@
-/* on line 1 of stylesheets/screen.sass */
-body {
-  font-family: Helvetica, Arial, sans-serif;
-  color: #222222;
-  background: #fcfcfc;
-  padding: 2em;
+/* normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
+/* =============================================================================
+ * HTML5 display definitions
+ * ========================================================================== */
+/* Corrects block display not defined in IE6/7/8/9 & FF3 */
+/* on line 10 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
 }
+
+/* Corrects inline-block display not defined in IE6/7/8/9 & FF3 */
+/* on line 16 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* Prevents modern browsers from displaying 'audio' without controls
+ * Remove excess height in iOS5 devices */
+/* on line 25 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support */
+/* on line 33 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+[hidden] {
+  display: none;
+}
+
+/* =============================================================================
+ * Base
+ * ========================================================================== */
+/* 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+/* on line 46 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  font-family: sans-serif;
+}
+
+/* Addresses font-family inconsistency between 'textarea' and other form elements. */
+/* on line 58 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+button, input, select, textarea {
+  font-family: sans-serif;
+}
+
+/* Addresses margins handled incorrectly in IE6/7 */
+/* on line 64 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+body {
+  margin: 0;
+}
+
+/* =============================================================================
+ * Links
+ * ========================================================================== */
+/* Addresses outline displayed oddly in Chrome */
+/* on line 75 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+a:focus {
+  outline: thin dotted;
+}
+/* on line 77 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test */
+/* =============================================================================
+ * Typography
+ * ========================================================================== */
+/* Addresses font sizes and margins set differently in IE6/7
+ * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5 */
+/* on line 92 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* on line 96 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* on line 100 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* on line 104 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* on line 108 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* on line 112 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+/* Addresses styling not present in IE7/8/9, S5, Chrome */
+/* on line 119 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* Addresses style set to 'bolder' in FF3+, S4/5, Chrome */
+/* on line 125 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+b, strong {
+  font-weight: bold;
+}
+
+/* on line 128 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* Addresses styling not present in S5, Chrome */
+/* on line 134 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+dfn {
+  font-style: italic;
+}
+
+/* Addresses styling not present in IE6/7/8/9 */
+/* on line 140 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+mark {
+  background: yellow;
+  color: black;
+}
+
+/* Addresses margins set differently in IE6/7 */
+/* on line 147 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+p {
+  margin: 1em 0;
+}
+
+/* on line 150 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+pre {
+  margin: 1em 0;
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em;
+}
+
+/* Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59 */
+/* on line 160 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+code, kbd, samp {
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em;
+}
+
+/* Improves readability of pre-formatted text in all browsers */
+/* on line 168 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4 */
+/* 1 */
+/* on line 179 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+q {
+  quotes: none;
+}
+/* on line 181 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* 2 */
+/* on line 187 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+small {
+  font-size: 75%;
+}
+
+/* Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930 */
+/* on line 194 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* on line 200 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+/* on line 207 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+sub {
+  bottom: -0.25em;
+}
+
+/* =============================================================================
+ * Lists
+ * ========================================================================== */
+/* Addresses margins set differently in IE6/7 */
+/* on line 217 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+dl, menu, ol, ul {
+  margin: 1em 0;
+}
+
+/* on line 220 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* Addresses paddings set differently in IE6/7 */
+/* on line 226 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+menu, ol, ul {
+  padding: 0 0 0 40px;
+}
+
+/* Corrects list images handled incorrectly in IE7 */
+/* on line 233 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* =============================================================================
+ * Embedded content
+ * ========================================================================== */
+/* 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+/* on line 246 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/* Corrects overflow displayed oddly in IE9 */
+/* on line 255 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* =============================================================================
+ * Figures
+ * ========================================================================== */
+/* Addresses margin not present in IE6/7/8/9, S5, O11 */
+/* on line 265 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+figure, form {
+  margin: 0;
+}
+
+/* =============================================================================
+ * Forms
+ * ========================================================================== */
+/* Corrects margin displayed oddly in IE6/7 */
+/* Define consistent border, margin, and padding */
+/* on line 278 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects text not wrapping in FF3
+ * 3. Corrects alignment displayed oddly in IE6/7 */
+/* on line 288 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/* 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers */
+/* on line 302 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+button, input, select, textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/* Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet */
+/* on line 315 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+button, input {
+  line-height: normal;
+  /* 1 */
+}
+
+/* 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Removes inner spacing in IE7 without affecting normal text inputs
+ *    Known issue: inner spacing remains in IE6 */
+/* on line 325 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+button {
+  cursor: pointer;
+  /* 1 */
+  -webkit-appearance: button;
+  /* 2 */
+  *overflow: visible;
+  /* 3 */
+}
+
+/* on line 334 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  /* 1 */
+  -webkit-appearance: button;
+  /* 2 */
+  *overflow: visible;
+  /* 3 */
+}
+
+/* Re-set default cursor for disabled elements */
+/* on line 345 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+button[disabled] {
+  cursor: default;
+}
+
+/* on line 349 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+input[disabled] {
+  cursor: default;
+}
+/* on line 351 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+/* on line 360 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+/* on line 367 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Removes excess padding in IE8/9
+ * 3. Removes excess padding in IE7
+ *    Known issue: excess padding remains in IE6 */
+/* 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+/* Removes inner padding and search cancel button in S5, Chrome on OS X */
+/* Removes inner padding and border in FF3+
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+/* on line 387 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers */
+/* on line 395 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* =============================================================================
+ * Tables
+ * ========================================================================== */
+/* Remove most spacing between table cells */
+/* on line 408 of stylesheets/shared/_normalize.sass
+   from line 2 of stylesheets/screen.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* on line 2 of stylesheets/shared/_mixins.sass, in `clearfix'
+   from line 2 of stylesheets/shared/_header.sass
+   from line 5 of stylesheets/screen.sass */
+#header:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+/* on line 4 of stylesheets/shared/_header.sass
+   from line 5 of stylesheets/screen.sass */
+#header h1 {
+  float: left;
+}
+/* on line 7 of stylesheets/shared/_header.sass
+   from line 5 of stylesheets/screen.sass */
+#header h1 a {
+  border: none;
+}
+/* on line 10 of stylesheets/shared/_header.sass
+   from line 5 of stylesheets/screen.sass */
+#header nav {
+  float: right;
+}
+/* on line 13 of stylesheets/shared/_header.sass
+   from line 5 of stylesheets/screen.sass */
+#header nav ul {
+  margin-top: 1.15em;
+  list-style: none;
+  padding: 0 15px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-border-radius: 1.3em;
+  border-radius: 1.3em;
+  -moz-border-radius: 1.3em;
+}
+/* on line 2 of stylesheets/shared/_mixins.sass, in `clearfix'
+   from line 15 of stylesheets/shared/_header.sass
+   from line 5 of stylesheets/screen.sass */
+#header nav ul:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+/* on line 21 of stylesheets/shared/_header.sass
+   from line 5 of stylesheets/screen.sass */
+#header nav ul li {
+  float: left;
+}
+/* on line 24 of stylesheets/shared/_header.sass
+   from line 5 of stylesheets/screen.sass */
+#header nav ul li a {
+  border: none;
+  display: block;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  padding: 0.8em 15px;
+  color: #2a2626;
+  text-shadow: 0px 1px 1px white;
+  filter: dropshadow(color=white, offx=0, offy=1);
+}
+/* on line 34 of stylesheets/shared/_header.sass
+   from line 5 of stylesheets/screen.sass */
+#header nav ul li a.current {
+  color: #ff3c00;
+  font-weight: bold;
+}
+
 /* on line 7 of stylesheets/screen.sass */
-body h1 {
-  color: #ffcc00;
+a, a:visited {
+  color: #ff3c00;
+  text-decoration: none;
+  border-bottom: 1px dotted #ff3c00;
+}
+/* on line 12 of stylesheets/screen.sass */
+a:hover, a:active, a:visited:hover, a:visited:active {
+  border: none;
+}
+
+/* on line 16 of stylesheets/screen.sass */
+body {
+  background: white url(/images/shared/bg.png);
 }

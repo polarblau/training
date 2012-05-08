@@ -1,7 +1,19 @@
 !!! 5
 %html
   %head
-    %title= @title
+    %meta(charset="utf-8")
+    %title= "#{@title} | What the fl*g?"
     %link(rel="stylesheet" href="/stylesheets/screen.css")
   %body
-    = yield
+    #container
+      %header#header
+        %h1
+          %a(href="/" title="Home")
+            = image_tag("/images/header/logo.png", alt: "What the fl*ag?", width: 181, height: 18)
+        = render "/shared/navigation"
+      
+      #main
+        = yield
+      
+      %footer#footer
+        &copy; 2012 &mdash; Flo

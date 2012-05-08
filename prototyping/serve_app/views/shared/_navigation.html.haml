@@ -1,0 +1,15 @@
+%nav
+  %ul
+    - %w(Day Week Month Year).each_with_index do |mode, index|
+      %li
+        %a(class="#{index.zero? ? "current" : ""}" href="#" title="View in #{mode.downcase} mode")= mode
+        
+    / 
+      %li
+        %a.current(href="#" title="View in day mode") Day
+      %li
+        %a(href="#" title="View in week mode") Week
+      %li
+        %a(href="#" title="View in month mode") Month
+      %li
+        %a(href="#" title="View in year mode") Year
