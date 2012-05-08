@@ -30,19 +30,24 @@
 
 * https://developer.mozilla.org/en/CSS/CSS_Reference
 * http://css3generator.com/
+* [Clearfix](http://www.webtoolkit.info/css-clearfix.html)
+* [Normalize CSS](https://github.com/necolas/normalize.css)
+* [Floats](http://css-tricks.com/all-about-floats/)
 
 ## SASS
 
 * http://sass-lang.com/
 * http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
 
+## Textmate
+
+* [Textmate](http://macromates.com/)
+* [Textmate bundles](http://manual.macromates.com/en/bundles)
+* [Show hidden files in Textmate](https://gist.github.com/728445)
+
 ***
 
 ## General
-
-https://gist.github.com/728445
-
-### [Textmate bundles](http://manual.macromates.com/en/bundles)
 
 ### [stackoverflow.com](http://stackoverflow.com/)
 
