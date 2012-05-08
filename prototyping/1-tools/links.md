@@ -20,6 +20,7 @@
 ## HTML
 
 * https://developer.mozilla.org/en/HTML
+* https://github.com/h5bp/html5-boilerplate
 
 ## HAML
 
