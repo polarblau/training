@@ -54,6 +54,67 @@ body.day-view
   
     #content
       margin: 2.5em 280px 5em 180px
+      overflow: auto
+      
+      p
+        font-family: Georgia, serif
+        font-style: oblique
+        color: $medium_light_gray
+        line-height: 1.4em
+    
+    aside
+      position: absolute
+      left: 0
+      top: 0
+      bottom: 0
+      width: 150px
+      
+      .flag
+        position: absolute
+        top: 25px
+        bottom: 0
+        right: 0
+        width: 11px
+        background: url(/images/shared/flag/center_tile.png) repeat-y
+        
+        img
+          position: absolute
+          right: 8px
+          top: 20px
+        
+        div
+          position: absolute
+          width: 11px
+        
+          &.top
+            height: 18px
+            top: 0
+            background: url(/images/shared/flag/top.png) no-repeat
+          
+          &.bottom
+            height: 90px
+            bottom: 0
+            background: url(/images/shared/flag/bottom.png) no-repeat
+      
+      &.half-pole
+        .flag 
+          img
+            top: 45%
+
+      .textual
+        position: absolute
+        top: 77px
+        left: -10px
+        width: 100px
+        height: 100px
+        background: $red
+        text-align: center
+        color: $white
+        line-height: 100px
+        font-weight: bold
+        font-size: 1.5em
+        text-transform: uppercase
+        border-radius: 50px
       
     footer
       nav

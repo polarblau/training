@@ -613,8 +613,85 @@ body.day-view #main header h2 span {
    from line 7 of stylesheets/screen.sass */
 body.day-view #main #content {
   margin: 2.5em 280px 5em 180px;
+  overflow: auto;
 }
-/* on line 60 of stylesheets/pages/_day_view.sass
+/* on line 59 of stylesheets/pages/_day_view.sass
+   from line 7 of stylesheets/screen.sass */
+body.day-view #main #content p {
+  font-family: Georgia, serif;
+  font-style: oblique;
+  color: #555555;
+  line-height: 1.4em;
+}
+/* on line 65 of stylesheets/pages/_day_view.sass
+   from line 7 of stylesheets/screen.sass */
+body.day-view #main aside {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 150px;
+}
+/* on line 72 of stylesheets/pages/_day_view.sass
+   from line 7 of stylesheets/screen.sass */
+body.day-view #main aside .flag {
+  position: absolute;
+  top: 25px;
+  bottom: 0;
+  right: 0;
+  width: 11px;
+  background: url(/images/shared/flag/center_tile.png) repeat-y;
+}
+/* on line 80 of stylesheets/pages/_day_view.sass
+   from line 7 of stylesheets/screen.sass */
+body.day-view #main aside .flag img {
+  position: absolute;
+  right: 8px;
+  top: 20px;
+}
+/* on line 85 of stylesheets/pages/_day_view.sass
+   from line 7 of stylesheets/screen.sass */
+body.day-view #main aside .flag div {
+  position: absolute;
+  width: 11px;
+}
+/* on line 89 of stylesheets/pages/_day_view.sass
+   from line 7 of stylesheets/screen.sass */
+body.day-view #main aside .flag div.top {
+  height: 18px;
+  top: 0;
+  background: url(/images/shared/flag/top.png) no-repeat;
+}
+/* on line 94 of stylesheets/pages/_day_view.sass
+   from line 7 of stylesheets/screen.sass */
+body.day-view #main aside .flag div.bottom {
+  height: 90px;
+  bottom: 0;
+  background: url(/images/shared/flag/bottom.png) no-repeat;
+}
+/* on line 101 of stylesheets/pages/_day_view.sass
+   from line 7 of stylesheets/screen.sass */
+body.day-view #main aside.half-pole .flag img {
+  top: 45%;
+}
+/* on line 104 of stylesheets/pages/_day_view.sass
+   from line 7 of stylesheets/screen.sass */
+body.day-view #main aside .textual {
+  position: absolute;
+  top: 77px;
+  left: -10px;
+  width: 100px;
+  height: 100px;
+  background: #ff3c00;
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+/* on line 121 of stylesheets/pages/_day_view.sass
    from line 7 of stylesheets/screen.sass */
 body.day-view #main footer nav div {
   background: rgba(255, 60, 0, 0.2);
@@ -625,14 +702,14 @@ body.day-view #main footer nav div {
   bottom: 50px;
   z-index: 1000;
 }
-/* on line 71 of stylesheets/pages/_day_view.sass
+/* on line 132 of stylesheets/pages/_day_view.sass
    from line 7 of stylesheets/screen.sass */
 body.day-view #main footer nav ul li a {
   display: block;
   width: 130px;
   border: none;
 }
-/* on line 76 of stylesheets/pages/_day_view.sass
+/* on line 137 of stylesheets/pages/_day_view.sass
    from line 7 of stylesheets/screen.sass */
 body.day-view #main footer nav ul li a span {
   position: absolute;
@@ -645,7 +722,7 @@ body.day-view #main footer nav ul li a span {
   font-weight: normal;
   opacity: 0.3;
 }
-/* on line 87 of stylesheets/pages/_day_view.sass
+/* on line 148 of stylesheets/pages/_day_view.sass
    from line 7 of stylesheets/screen.sass */
 body.day-view #main footer nav ul li a span strong {
   font-size: 5em;
@@ -653,18 +730,18 @@ body.day-view #main footer nav ul li a span strong {
   line-height: 1em;
   letter-spacing: -0.05em;
 }
-/* on line 94 of stylesheets/pages/_day_view.sass
+/* on line 155 of stylesheets/pages/_day_view.sass
    from line 7 of stylesheets/screen.sass */
 body.day-view #main footer nav ul li a:hover span {
   opacity: 1;
 }
-/* on line 97 of stylesheets/pages/_day_view.sass
+/* on line 158 of stylesheets/pages/_day_view.sass
    from line 7 of stylesheets/screen.sass */
 body.day-view #main footer nav ul li.prev a {
   left: 0;
   right: auto;
 }
-/* on line 101 of stylesheets/pages/_day_view.sass
+/* on line 162 of stylesheets/pages/_day_view.sass
    from line 7 of stylesheets/screen.sass */
 body.day-view #main footer nav ul li.next a {
   left: auto;
