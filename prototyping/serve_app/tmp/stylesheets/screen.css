@@ -470,8 +470,13 @@ table {
   border-spacing: 0;
 }
 
+/* on line 1 of stylesheets/shared/_header.sass
+   from line 5 of stylesheets/screen.sass */
+#header {
+  margin: 0 150px;
+}
 /* on line 2 of stylesheets/shared/_mixins.sass, in `clearfix'
-   from line 2 of stylesheets/shared/_header.sass
+   from line 3 of stylesheets/shared/_header.sass
    from line 5 of stylesheets/screen.sass */
 #header:after {
   visibility: hidden;
@@ -481,22 +486,22 @@ table {
   clear: both;
   height: 0;
 }
-/* on line 4 of stylesheets/shared/_header.sass
+/* on line 5 of stylesheets/shared/_header.sass
    from line 5 of stylesheets/screen.sass */
 #header h1 {
   float: left;
 }
-/* on line 7 of stylesheets/shared/_header.sass
+/* on line 8 of stylesheets/shared/_header.sass
    from line 5 of stylesheets/screen.sass */
 #header h1 a {
   border: none;
 }
-/* on line 10 of stylesheets/shared/_header.sass
+/* on line 11 of stylesheets/shared/_header.sass
    from line 5 of stylesheets/screen.sass */
 #header nav {
   float: right;
 }
-/* on line 13 of stylesheets/shared/_header.sass
+/* on line 14 of stylesheets/shared/_header.sass
    from line 5 of stylesheets/screen.sass */
 #header nav ul {
   margin-top: 1.15em;
@@ -508,7 +513,7 @@ table {
   -moz-border-radius: 1.3em;
 }
 /* on line 2 of stylesheets/shared/_mixins.sass, in `clearfix'
-   from line 15 of stylesheets/shared/_header.sass
+   from line 16 of stylesheets/shared/_header.sass
    from line 5 of stylesheets/screen.sass */
 #header nav ul:after {
   visibility: hidden;
@@ -518,12 +523,12 @@ table {
   clear: both;
   height: 0;
 }
-/* on line 21 of stylesheets/shared/_header.sass
+/* on line 22 of stylesheets/shared/_header.sass
    from line 5 of stylesheets/screen.sass */
 #header nav ul li {
   float: left;
 }
-/* on line 24 of stylesheets/shared/_header.sass
+/* on line 25 of stylesheets/shared/_header.sass
    from line 5 of stylesheets/screen.sass */
 #header nav ul li a {
   border: none;
@@ -535,7 +540,7 @@ table {
   text-shadow: 0px 1px 1px white;
   filter: dropshadow(color=white, offx=0, offy=1);
 }
-/* on line 34 of stylesheets/shared/_header.sass
+/* on line 35 of stylesheets/shared/_header.sass
    from line 5 of stylesheets/screen.sass */
 #header nav ul li a.current {
   color: #ff3c00;
@@ -544,7 +549,7 @@ table {
 
 /* on line 3 of stylesheets/pages/_day_view.sass
    from line 7 of stylesheets/screen.sass */
-body.day-view #main, body.day-view #main nav ul li {
+body.day-view #main, body.day-view #main nav ul li a {
   background: white;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.35);
   position: fixed;
@@ -553,20 +558,32 @@ body.day-view #main, body.day-view #main nav ul li {
   left: 150px;
   right: 150px;
 }
-/* on line 15 of stylesheets/pages/_day_view.sass
+/* on line 14 of stylesheets/pages/_day_view.sass
    from line 7 of stylesheets/screen.sass */
-body.day-view #main nav ul li {
+body.day-view #main nav div {
+  background: rgba(255, 60, 0, 0.2);
+  height: 4px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  z-index: 1000;
+}
+/* on line 25 of stylesheets/pages/_day_view.sass
+   from line 7 of stylesheets/screen.sass */
+body.day-view #main nav ul li a {
+  display: block;
   width: 130px;
 }
-/* on line 18 of stylesheets/pages/_day_view.sass
+/* on line 29 of stylesheets/pages/_day_view.sass
    from line 7 of stylesheets/screen.sass */
-body.day-view #main nav ul li.prev {
+body.day-view #main nav ul li.prev a {
   left: 0;
   right: auto;
 }
-/* on line 22 of stylesheets/pages/_day_view.sass
+/* on line 33 of stylesheets/pages/_day_view.sass
    from line 7 of stylesheets/screen.sass */
-body.day-view #main nav ul li.next {
+body.day-view #main nav ul li.next a {
   left: auto;
   right: 0;
 }
