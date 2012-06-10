@@ -18,7 +18,8 @@
             %h2
               %strong 19
               March 2012
-              %span.today Today
+              %em Today
+              %span
             
           #content
             = yield
@@ -29,9 +30,11 @@
               %ul
                 %li.prev
                   %a(href="#" title="Previous day" rel="prev")
-                    %strong 18
-                    March 2012
+                    %span
+                      %strong 18
+                      March 2012
                 %li.next
                   %a(href="#" title="Next day" rel="next")
-                    %strong 20
-                    March 2012
+                    %span
+                      %strong 20
+                      March 2012
