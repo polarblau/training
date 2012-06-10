@@ -542,6 +542,18 @@ table {
   font-weight: bold;
 }
 
+/* on line 3 of stylesheets/pages/_day_view.sass
+   from line 7 of stylesheets/screen.sass */
+body.day-view #main {
+  background: white;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.35);
+  position: fixed;
+  top: 7em;
+  bottom: 0;
+  left: 150px;
+  right: 150px;
+}
+
 /* on line 9 of stylesheets/screen.sass */
 a, a:visited {
   color: #ff3c00;
