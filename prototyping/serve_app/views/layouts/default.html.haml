@@ -13,15 +13,24 @@
         = render "/shared/navigation"
       
       #main
-        = yield
+        %article
+          %header
+            %h2
+              %strong 19
+              March 2012
+              %span.today Today
+            
+          = yield
         
-        %nav
-          %ul
-            %li.prev
-              %a(href="#" title="Previous day" rel="prev")
-                %strong 18
-                March 2012
-            %li.next
-              %a(href="#" title="Next day" rel="next")
-                %strong 20
-                March 2012
+          %footer
+            %nav
+              %div
+              %ul
+                %li.prev
+                  %a(href="#" title="Previous day" rel="prev")
+                    %strong 18
+                    March 2012
+                %li.next
+                  %a(href="#" title="Next day" rel="next")
+                    %strong 20
+                    March 2012
