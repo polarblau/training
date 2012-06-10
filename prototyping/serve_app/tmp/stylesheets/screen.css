@@ -542,18 +542,18 @@ table {
   font-weight: bold;
 }
 
-/* on line 7 of stylesheets/screen.sass */
+/* on line 9 of stylesheets/screen.sass */
 a, a:visited {
   color: #ff3c00;
   text-decoration: none;
   border-bottom: 1px dotted #ff3c00;
 }
-/* on line 12 of stylesheets/screen.sass */
+/* on line 14 of stylesheets/screen.sass */
 a:hover, a:active, a:visited:hover, a:visited:active {
   border: none;
 }
 
-/* on line 16 of stylesheets/screen.sass */
+/* on line 18 of stylesheets/screen.sass */
 body {
   background: white url(/images/shared/bg.png);
 }
