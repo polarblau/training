@@ -558,9 +558,32 @@ body.day-view #main, body.day-view #main nav ul li a {
   left: 150px;
   right: 150px;
 }
-/* on line 14 of stylesheets/pages/_day_view.sass
+/* on line 13 of stylesheets/pages/_day_view.sass
    from line 7 of stylesheets/screen.sass */
-body.day-view #main nav div {
+body.day-view #main header {
+  position: absolute;
+  width: 150px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-left: 1px solid #f3f3f3;
+}
+/* on line 21 of stylesheets/pages/_day_view.sass
+   from line 7 of stylesheets/screen.sass */
+body.day-view #main header h2 {
+  position: absolute;
+  bottom: 70px;
+  text-align: center;
+  font-size: 1em;
+}
+/* on line 27 of stylesheets/pages/_day_view.sass
+   from line 7 of stylesheets/screen.sass */
+body.day-view #main #content {
+  margin: 2.5em 280px 5em 180px;
+}
+/* on line 32 of stylesheets/pages/_day_view.sass
+   from line 7 of stylesheets/screen.sass */
+body.day-view #main footer nav div {
   background: rgba(255, 60, 0, 0.2);
   height: 4px;
   position: fixed;
@@ -569,21 +592,21 @@ body.day-view #main nav div {
   bottom: 50px;
   z-index: 1000;
 }
-/* on line 25 of stylesheets/pages/_day_view.sass
+/* on line 43 of stylesheets/pages/_day_view.sass
    from line 7 of stylesheets/screen.sass */
-body.day-view #main nav ul li a {
+body.day-view #main footer nav ul li a {
   display: block;
   width: 130px;
 }
-/* on line 29 of stylesheets/pages/_day_view.sass
+/* on line 47 of stylesheets/pages/_day_view.sass
    from line 7 of stylesheets/screen.sass */
-body.day-view #main nav ul li.prev a {
+body.day-view #main footer nav ul li.prev a {
   left: 0;
   right: auto;
 }
-/* on line 33 of stylesheets/pages/_day_view.sass
+/* on line 51 of stylesheets/pages/_day_view.sass
    from line 7 of stylesheets/screen.sass */
-body.day-view #main nav ul li.next a {
+body.day-view #main footer nav ul li.next a {
   left: auto;
   right: 0;
 }
