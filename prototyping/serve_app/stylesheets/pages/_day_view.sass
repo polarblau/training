@@ -1,3 +1,9 @@
+@-webkit-keyframes raisehalf
+  from
+    top: 5%
+  to
+    top: 45%
+    
 body.day-view
 
   #main, #main nav ul li a
@@ -76,11 +82,10 @@ body.day-view
         right: 0
         width: 11px
         background: url(/images/shared/flag/center_tile.png) repeat-y
-        
+          
         img
           position: absolute
           right: 8px
-          top: 20px
         
         div
           position: absolute
@@ -99,6 +104,9 @@ body.day-view
       &.half-pole
         .flag 
           img
+            -webkit-animation-name: raisehalf
+            -webkit-animation-timing-function: ease-out
+            -webkit-animation-duration: 2s
             top: 45%
 
       .textual
@@ -108,12 +116,15 @@ body.day-view
         width: 100px
         height: 100px
         background: $red
+        background: linear-gradient(top, green 0%, green 50%, $red 50%, $red 100%)
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparentize($red, 0.5)), color-stop(50%, transparentize($red, 0.5)), color-stop(50%, $red), color-stop(100%,$red))
         text-align: center
         color: $white
         line-height: 100px
         font-weight: bold
         font-size: 1.5em
         text-transform: uppercase
+        -webkit-transform: rotate(-10deg)
         border-radius: 50px
       
     footer
