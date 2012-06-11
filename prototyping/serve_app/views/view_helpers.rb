@@ -1,8 +1,8 @@
-#
-# Methods placed in this module can be used inside of any view.
-# View helpers allow you to encapsalate complex logic and keep your
-# views pristine.
-#
+require 'active_support/inflector'
+
+I18n.load_path = Dir['locale/**/*.yml']
+I18n.reload!
+
 module ViewHelpers
   
   # Calculate the years for a copyright
@@ -20,6 +20,16 @@ module ViewHelpers
     #no-op
   end
   
-  # Add your own helpers below...
+  def list(key, &block)
+    data = t(key).clone rescue {}
+    raise data if data =~ /translation missing/
+    data = NestedOstruct.import(data)
+    raise data unless data.is_a? Array
+    data.each {|i| yield i }
+  end
   
+  def t(key, args={})
+    I18n.t(key, args)
+  end
+    
 end

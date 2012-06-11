@@ -16,6 +16,9 @@ use Sass::Plugin::Rack # Compile SASS
 # http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#output_style
 Sass::Plugin.options.merge!(:template_location => 'stylesheets', :style => :expanded, :trace_selectors => true)
 
+# Nested OStruct
+require File.join(File.dirname(__FILE__), 'lib', 'nested_ostruct')
+
 # Compile Sass on the fly with the Sass plugin
 if ENV['RACK_ENV'] != 'production'
   # Compile SASS to tmp directory

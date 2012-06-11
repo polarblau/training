@@ -1,0 +1,11 @@
+---
+en:
+  books:
+    - 
+      id: 1
+      title: Pride and Prejudice
+      author: Jane Austen
+    - 
+      id: 2
+      title: Brave New World
+      author: Aldous Huxley
